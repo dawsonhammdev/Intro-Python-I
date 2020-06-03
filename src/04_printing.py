@@ -16,7 +16,7 @@ z = "I like turtles!"
 
 # Finally, print the same thing using an f-string
 
-print("x is", x, "y is", y, "z is", z)
+print('x is %d, y is %f, z is "%s"' % (x, y, z))
 
 print("x is {}, y is {}, z is {}".format(x, y, z))
 
