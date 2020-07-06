@@ -20,4 +20,4 @@ print('x is %d, y is %f, z is "%s"' % (x, y, z))
 
 print("x is {}, y is {}, z is {}".format(x, y, z))
 
-print(f"x is {x} y is {y} z is {z}")
+print(f"x is {x}, y is {y}, z is {z}")
