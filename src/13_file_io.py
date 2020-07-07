@@ -8,10 +8,13 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Open up the "foo.txt" file (which already exists) for reading
 # Print all the contents of the file, then close the file
 # Note: pay close attention to your current directory when trying to open "foo.txt"
-import foo.txt
-# YOUR CODE HERE
-f = open(foo, 'w')
-print(f)
+# import foo.txt
+# # YOUR CODE HERE
+# f = open(foo, 'w')
+# print(f)
+
+file = open("foo.txt", "r") 
+print(file.read())
 
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
@@ -20,7 +23,5 @@ print(f)
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
-import bar
-# YOUR CODE HERE
-f = open(bar, 'w')
-print(f)
+with open("bar.txt","w") as f:
+  f.write('Hello World I am happy to see you this morning.')
